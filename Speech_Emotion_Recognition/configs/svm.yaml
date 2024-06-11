@@ -1,0 +1,20 @@
+model: svm
+
+# datasets
+data_path: datasets/IN
+class_labels: ["angry", "fear", "happy", "neutral", "sad", "surprise"]  # 6_category
+
+
+# features
+feature_folder: features/3_category/IN/  # saving folder
+
+# checkpoints
+checkpoint_path: checkpoints/  
+checkpoint_name: SVM_IN_3
+
+# model parameters
+params: {
+  kernel: 'rbf',
+  probability: True,
+  gamma: 'auto'
+}

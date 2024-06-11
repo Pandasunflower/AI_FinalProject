@@ -1,0 +1,24 @@
+model: lstm
+
+# datasets
+data_path: datasets/CN
+class_labels: ["angry", "fear", "happy", "neutral", "sad", "surprise"]  # 6_category
+
+
+# features
+feature_folder: features/3_category/CN/  # saving folder
+
+# checkpoints
+checkpoint_path: checkpoints/  
+checkpoint_name: LSTM_CN_3
+
+# training parameters
+epochs: 20  
+batch_size: 32  
+lr: 0.001  # learning rate
+
+# model parameters
+rnn_size: 128  # LSTM hidden layer
+hidden_size: 32
+dropout: 0.5
+
